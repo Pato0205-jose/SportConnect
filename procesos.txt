@@ -1,19 +1,85 @@
 ### Prompt de obtención de procesos
 
-Eres un Product Designer experto con amplia experiencia en desarrollo de productos de software y una sólida formación en diseño UX/UI. Tu función es facilitar `[Problematica_que_se_resuelve_la_app]` mediante un proceso bien estructurado. Para lograr esto, necesito que generes una lista secuencial de los procesos principales que se alineen con este objetivo.
+Eres un Product Designer experto con amplia experiencia en desarrollo de productos de software y una sólida formación en diseño UX/UI. Tu función es facilitar la falta de una herramienta digital eficiente para la gestión de horarios de entrenamiento y la reserva de citas, lo que genera desorganización y pérdida de tiempo para entrenadores y clientes mediante un proceso bien estructurado. Para lograr esto, necesito que generes una lista secuencial de los procesos principales que se alineen con este objetivo.
 
 Por favor presenta la información en el siguiente formato estructurado:
 
-1. **Objetivo**: Define la meta principal de cada proceso.
-2. **Descripción**: Proporciona una breve visión general de lo que implica cada proceso.
-3. **Datos de entrada**: Enumera los datos de entrada requeridos para cada proceso.
-4. **Resultado de salida**: Especifica el resultado esperado de cada proceso.
-5. **Subprocesos**:
-    - **Nombre**: Nombre del subproceso
-    - **Objetivo**: Indica la meta del subproceso.
-    - **Descripción**: Da una breve descripción del subproceso.
-    - **Pasos**: Describe los pasos involucrados en el subproceso.
+1. Proceso: Gestión de Horarios y Disponibilidad (para el entrenador)
+Objetivo: Permitir que el entrenador administre y publique su agenda de entrenamiento de forma clara y accesible para sus clientes.
 
-Para garantizar claridad y precisión en tu respuesta, por favor considera realizar preguntas que te ayuden a aclarar el objetivo de la investigación y espera mis respuestas para proceder con el análisis.
+Descripción: Este proceso cubre todas las acciones que un entrenador necesita realizar para definir su disponibilidad, desde crear nuevos bloques de tiempo hasta modificarlos según sus necesidades.
 
-Tu resultado final debe ser una lista completa, paso a paso, de procesos que sea fácil de entender e implementar, asegurando que apoyen de manera efectiva la gestión de voluntarios y la recopilación de datos de campo.
+Datos de entrada: Credenciales de inicio de sesión del entrenador.
+
+Resultado de salida: Un calendario actualizado y visible que refleja la disponibilidad del entrenador.
+
+Subproceso 1.1: Publicar Horario
+
+Objetivo: Crear un nuevo bloque de tiempo disponible para entrenamiento.
+
+Descripción: El entrenador define un periodo de tiempo en su calendario que está abierto para ser reservado por un cliente.
+
+Pasos:
+
+El entrenador selecciona una fecha y una hora de inicio en el calendario.
+
+Establece la hora de finalización y la duración del bloque.
+
+Define si la disponibilidad es para una sesión individual o grupal.
+
+Confirma y publica el horario, haciéndolo visible para los clientes.
+
+Subproceso 1.2: Editar o Eliminar Horario
+
+Objetivo: Modificar o eliminar un bloque de tiempo ya publicado.
+
+Descripción: El entrenador ajusta un horario existente para reflejar cambios en su disponibilidad o para eliminar un horario que ya no está disponible.
+
+Pasos:
+
+El entrenador selecciona un bloque de horario en el calendario.
+
+Elige la opción de "Editar" o "Eliminar".
+
+Si selecciona "Editar", ajusta la fecha, hora o duración y guarda los cambios.
+
+Si selecciona "Eliminar", confirma la acción para que el horario deje de ser visible.
+
+2. Proceso: Consulta y Reserva de Citas (para el cliente)
+Objetivo: Facilitar que el cliente encuentre la disponibilidad del entrenador y reserve una sesión de entrenamiento de manera rápida y sencilla.
+
+Descripción: Este proceso guía al cliente a través de la búsqueda de su entrenador y la reserva de una cita en un horario disponible, eliminando la necesidad de comunicación manual.
+
+Datos de entrada: Credenciales de inicio de sesión del cliente.
+
+Resultado de salida: Una cita de entrenamiento confirmada en el calendario del cliente y del entrenador.
+
+Subproceso 2.1: Consultar Disponibilidad
+
+Objetivo: Ver los horarios disponibles del entrenador de forma clara.
+
+Descripción: El cliente navega por el calendario del entrenador para identificar los bloques de tiempo que están abiertos para reservas.
+
+Pasos:
+
+El cliente busca y selecciona a su entrenador.
+
+Accede a la vista de calendario del entrenador.
+
+Navega entre los días y semanas para ver los bloques de tiempo marcados como "disponibles".
+
+Subproceso 2.2: Reservar Cita
+
+Objetivo: Confirmar y agendar un horario de entrenamiento.
+
+Descripción: El cliente elige un bloque de tiempo disponible y completa el proceso de reserva para asegurar su lugar.
+
+Pasos:
+
+El cliente selecciona un bloque de tiempo disponible.
+
+Revisa los detalles de la cita (fecha, hora, duración).
+
+Confirma la reserva.
+
+Recibe una confirmación de la cita, que se agrega automáticamente a su calendario.

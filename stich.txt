@@ -1,15 +1,67 @@
 ### Prompt para Stitch
 
-Te comparto el sistema de diseño para generar una aplicación móvil, de momento analiza la información y guardala en tu memoria para la construcción de las interfaces que te voy a solicitar: 
+La interfaz debe ser un calendario semanal interactivo que muestre de forma clara y visual los horarios de entrenamiento del entrenador. La pantalla debe permitir al entrenador ver de un vistazo qué franjas horarias están disponibles, cuáles ya están reservadas y cuáles ha bloqueado manualmente. Cada bloque de horario debe ser un componente táctil que, al seleccionarlo, despliegue opciones de gestión como editar, eliminar o ver los detalles de una reserva. El diseño debe ser minimalista, priorizando la legibilidad y una navegación intuitiva.
 
----
+Prompt de UI estructurado
+Pantalla: Calendario del Entrenador.
 
-La información proporcionada es esencial para definir la arquitectura de diseño con precisión y cumplir con los requisitos de **alta fidelidad** [Query, 382] y el **Javerage Electoral Design System (JEDS)** [Query, 385, 491].
+Propósito: Gestionar y visualizar los horarios de entrenamiento disponibles y reservados.
 
-Hemos confirmado tres puntos clave que ahora se integran en el *prompt* final:
+1. Encabezado de la pantalla
 
-1. **Fidelidad y Tema:** Se prioriza un prototipo de **Alta Fidelidad** bajo el **Tema Oscuro** [Query].
-2. **Logo:** El **Logo de Javerage Electoral** debe ser prominente en el encabezado para fidelizar la marca [Query].
-3. **Componente "Recordarme":** Se utilizará un **Toggle Switch** (interruptor deslizante) [Query] posicionado debajo del campo de contraseña, alineado con las mejores prácticas de UI móvil.
+Título: "Mi Calendario".
 
-A continuación, se presenta la descripción de la UI en un solo párrafo y el *prompt* estructurado con el detalle final de los componentes.
+Componentes:
+
+Botón de menú: Ícono de hamburguesa en la esquina superior izquierda.
+
+Avatar/Foto de perfil: En la esquina superior derecha.
+
+2. Navegación del calendario
+
+Componentes:
+
+Selector de semana: Muestra la semana actual (ej. "Semana del 22 al 28 de septiembre").
+
+Botones de navegación: Íconos de flecha para avanzar o retroceder una semana.
+
+Botón "Hoy": Para regresar rápidamente al día actual.
+
+3. Vista de calendario semanal
+
+Componentes:
+
+Encabezados de días de la semana: De "Dom" a "Sáb".
+
+Bloques de horario:
+
+Estado "Disponible": Bloque de color claro con el texto "Disponible" y la hora.
+
+Estado "Reservado": Bloque de color oscuro con el nombre del cliente y la hora.
+
+Estado "No disponible/Bloqueado": Bloque de color gris sin interacción.
+
+4. Botón de acción principal
+
+Componente:
+
+Botón flotante: Un círculo grande con el ícono de "Más (+)" en la esquina inferior derecha. Al tocarlo, se abre una ventana para añadir un nuevo horario.
+
+5. Ventana emergente "Agregar Horario" (Modal)
+
+Propósito: Un formulario para que el entrenador añada una nueva franja de tiempo.
+
+Componentes:
+
+Campo de entrada de fecha: Permite seleccionar la fecha.
+
+Campo de entrada de hora de inicio: Permite definir la hora de inicio.
+
+Campo de entrada de hora de fin: Permite definir la hora de finalización.
+
+Botón: "Guardar Horario".
+
+Botón: "Cancelar".
+
+Design Brief para desarrolladores
+El objetivo de esta pantalla es crear una experiencia fluida y eficiente para la gestión de horarios. La navegación debe ser rápida y los elementos interactivos deben responder de manera inmediata. Se debe priorizar el uso de componentes reutilizables y un tema oscuro para optimizar la batería y la experiencia visual. Los estados de los bloques de horario deben ser visualmente distintos para que el entrenador pueda identificar su disponibilidad de un vistazo. La arquitectura debe ser modular para facilitar la escalabilidad futura del calendario.
